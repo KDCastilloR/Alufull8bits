@@ -1,4 +1,4 @@
-module SUMARESTA (
+module SumaResta (
   input wire [7:0] A,B,
   input wire ALU0,
   output wire CarryOut,
@@ -8,7 +8,7 @@ module SUMARESTA (
     
   assign b = ALU0 ? ~B : B;
   
-  fulladder_8bits sumador(
+  full_adder_8bits sumador(
     .A(A),
     .B(b),
     .Cin(ALU0),
