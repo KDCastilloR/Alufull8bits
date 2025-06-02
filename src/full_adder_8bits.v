@@ -1,4 +1,4 @@
-module fulladder_8bits  (
+module full_adder_8bits (
   input wire Cin,
   input wire [7:0] A,B,
   output wire [7:0] Suma,
@@ -7,7 +7,7 @@ module fulladder_8bits  (
                     
   wire [6:0] outs;     // Variable de Carry interno por cada suma
     
-    // 32 sumas debido a cada bits de la señales de entrada 
+   //sumas debido a los bits de entrada
   full_adder Adder0(.A(A[0]), .B(B[0]), .cin(Cin), .Sum(Suma[0]), .cout(outs[0]));
   full_adder Adder1(.A(A[1]), .B(B[1]), .cin(outs[0]), .Sum(Suma[1]), .cout(outs[1]));
   full_adder Adder2(.A(A[2]), .B(B[2]), .cin(outs[1]), .Sum(Suma[2]), .cout(outs[2]));
