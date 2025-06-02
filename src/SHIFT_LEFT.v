@@ -4,7 +4,6 @@ module SHIFT_LEFT (
   output reg [7:0] Shift_Left
 );
 
-    //6'd# quiere decir: # numero en base decimal en 6 bits
     
   always @(*) 
      begin 
