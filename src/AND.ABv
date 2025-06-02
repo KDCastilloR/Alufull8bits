@@ -1,4 +1,5 @@
-module AND (input wire [7:0] A, B,
+module AND_AB (
+  input wire [7:0] A, B,
   output wire [7:0] and_ab
 );
     
