@@ -1,4 +1,4 @@
-module OR (
+module OR_AB (
   input wire [7:0] A, B,
   output wire [7:0] or_ab);
     
