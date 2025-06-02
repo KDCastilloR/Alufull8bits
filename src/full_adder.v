@@ -9,4 +9,4 @@ module full_adder (
   assign Sum = P ^ cin;    // Suma debido a los bits A o B y el Carry in
   assign cout = G | ( P & cin );    // Salida de Carry debido a las entradas y el carry in
     
-endmodule
+endmodule  
