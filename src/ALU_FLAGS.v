@@ -12,7 +12,7 @@ module BANDERAS_ALU (
     wire z0, z1;
 
     // Overflow solo válido para suma/resta: operación 000 (suma), 001 (resta)
-    assign rebosar = (~(ALU_OP[0] ^ a7 ^ b7)) & (a7 ^ sumrest7) & (~ALU_OP[1]) & (~ALU_OP[2]);
+    assign rebosar = (~(ALU_OP[0] ^ a7 ^ b7)) & (a7 ^ sumrest7) & (~ALU_OP[1]) & (~ALU_OP[2]); 
 
     assign carry_flag = (~ALU_OP[1]) & (~ALU_OP[2]) & llevar;
 
